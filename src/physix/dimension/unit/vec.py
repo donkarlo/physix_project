@@ -1,4 +1,7 @@
-from mathx.linalg.matrix.vec.vec import Vec as LinalgVec
+from mathx.linalg.vec.vec import Vec as LinalgVec
+
+from physix.dimension.unit.unit import Unit
+
 
 class Vec:
     def __init__(self, unit:Unit, val: LinalgVec):
@@ -8,5 +11,5 @@ class Vec:
     def get_unit(self)->Unit:
         return self._unit
 
-    def get_val(self)->Vec:
+    def get_val(self)-> LinalgVec:
         return self._val

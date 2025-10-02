@@ -1,11 +1,14 @@
+from typing import List, Optional
+
+from physix.dimension.unit.unit import Unit
+from mathx.linalg.vec.vec import Vec
+
 class Vecs:
-    def __init__(self, unit:Unit, vecs:List[Vec]):
+    def __init__(self, unit:Unit, vecs:Optional[List[Vec]]=None):
         self._unit = unit
+        if vecs is None:
+            vecs = []
         self._vecs = vecs
 
-    def add_vec(self, vec:Vec):
-        self._vecs.append(vec)
-
-    def add_united_vec(self, united_vec:UnitedVec):
-        if united_vec.get_unit().get_type_id() != self._unit.get_type_id():
-            raise ValueError(f"")
+    def add_vec(self, val:Vec)->None:
+        self._vecs.append(val)

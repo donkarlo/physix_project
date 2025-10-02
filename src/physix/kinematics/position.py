@@ -1,4 +1,4 @@
-from mathx.vec.vec import Vec
+from mathx.linalg.vec.vec import Vec
 class Position(Vec):
     def __init__(self, x, y, z):
         self._x = x

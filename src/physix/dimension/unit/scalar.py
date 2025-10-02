@@ -1,6 +1,5 @@
-from mathx.linalg.matrix.vec.vec import Vec
-from mathx.physics.unit.united_val import UnitedVal
-from mathx.physics.unit.unit import Unit
+from mathx.linalg.vec.vec import Vec
+from physix.dimension.unit.unit import Unit
 
 class Scalar:
     def __init__(self, unit:Unit, value:float):

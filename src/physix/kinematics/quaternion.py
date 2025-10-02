@@ -1,5 +1,4 @@
-from mathx.vec.vec import Vec
-import numpy as np
+from mathx.linalg.vec.vec import Vec
 
 class Quaternion(Vec):
     __slots__ = ("_qw", "_qx", "_qy", "_qz")

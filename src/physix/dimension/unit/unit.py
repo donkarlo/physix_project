@@ -1,11 +1,9 @@
-from mathx.physics.dimension.type.type import Type as DimensionType
-from mathx.physics.dimension.unit import Type as UnitType
+from typing import Union
+
+from physix.dimension.dimension import Dimension
+
 
 class Unit:
-    def __init__(self, unit_type:UnitType):
-        self._unit_type = unit_type
-
-    def __eq__(self, other):
-        if self._type_id == other._type_id:
-            return True
-        return False
+    def __init__(self, dimension:Dimension, id:Union[int,str]):
+        self._dimension = dimension
+        self._id = id
