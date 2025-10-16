@@ -7,7 +7,7 @@ class Quaternion(Vec):
         self._qx = qx
         self._qy = qy
         self._qz = qz
-        super().__init__(Vec((self._qw,self._qx,self._qy,self._qz)))
+        super().__init__([self._qw,self._qx,self._qy,self._qz])
 
     def normalize(self):
         pass
