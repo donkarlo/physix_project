@@ -1,4 +1,5 @@
 from mathx.linalg.vec.vec import Vec
+from physix.dimension.unit.vec import Vec as UnitedVec
 
 class Quaternion(Vec):
     __slots__ = ("_qw", "_qx", "_qy", "_qz")

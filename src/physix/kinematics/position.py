@@ -1,16 +1,17 @@
 from physix.dimension.unit.unit import Unit
-from typing import List
+from typing import List, Optional
 import numpy as np
 from mathx.linalg.vec.vec import Vec
 from typing import Sequence
+from physix.dimension.unit.vec import Vec as UnitedVec
 
 
-class Position(Vec):
+class Position(UnitedVec):
     def __init__(self, x: float, y: float, z: float, unit:Unit):
+        super().__init__(unit, [x, y, z])
         self._x = x
         self._y = y
         self._z = z
-        super().__init__(np.asarray([self._x, self._y, self._z]))
 
         self._unit = unit
 

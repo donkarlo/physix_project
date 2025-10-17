@@ -12,7 +12,7 @@ class Pose(Vec):
         self._position = position
         self._quaternion = quaternion
 
-        concat_comps = TwoOpr(position, quaternion).concat().get_components()
+        concat_comps = TwoOpranded(position, quaternion).concat().get_components()
         super().__init__(concat_comps)
 
     @classmethod
