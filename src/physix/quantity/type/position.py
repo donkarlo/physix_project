@@ -1,23 +1,19 @@
-from physix.dimension.unit.unit import Unit
 from typing import List, Optional
 import numpy as np
 from mathx.linalg.vec.vec import Vec
 from typing import Sequence
-from physix.dimension.unit.vec import Vec as UnitedVec
 
 
-class Position(UnitedVec):
-    def __init__(self, x: float, y: float, z: float, unit:Unit):
-        super().__init__(unit, [x, y, z])
+class Position(Quantity):
+    def __init__(self, x: float, y: float, z: float):
+        super().__init__([x, y, z])
         self._x = x
         self._y = y
         self._z = z
 
-        self._unit = unit
-
 
     @classmethod
-    def init_from_components(cls, comps: Sequence[float], unit:Unit) -> "Position":
+    def init_from_components(cls, comps: Sequence[float]) -> "Position":
         x, y, z = map(float, comps[:3])
         return cls(x, y, z, unit)
 

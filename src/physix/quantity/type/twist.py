@@ -1,10 +1,11 @@
 from mathx.linalg.vec.opr.two_opranded import TwoOpranded
 from mathx.linalg.vec.vec import Vec
-from physix.kinematics.twist_angular import TwistAngular
-from physix.kinematics.twist_linear import TwistLinear
+from physix.quantity.quantity import Quantity
+from physix.quantity.type.twist_angular import TwistAngular
+from physix.quantity.type.twist_linear import TwistLinear
 
 
-class Twist(Vec):
+class Twist(Quantity):
     def __init__(self, twist_linear:TwistLinear, twist_angular:TwistAngular):
         self._linear = linear
         self._angular = angular

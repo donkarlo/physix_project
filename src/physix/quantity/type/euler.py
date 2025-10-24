@@ -1,4 +1,4 @@
-class Euler(State):
+class Euler(Quantity):
     def __init__(self, roll:float, pitch, yaw:float):
         self._roll = roll
         self._pitch = pitch
