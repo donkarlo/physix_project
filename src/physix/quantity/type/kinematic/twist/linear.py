@@ -2,7 +2,7 @@ from physix.dimension.unit.unit import Unit
 from mathx.linalg.vec.vec import Vec
 
 
-class TwistAngular(Quantity):
+class Linear(Quantity):
     """
     Linear velocity speed
     """

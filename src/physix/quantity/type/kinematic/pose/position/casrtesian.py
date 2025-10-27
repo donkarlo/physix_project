@@ -1,16 +1,12 @@
-from typing import List, Optional
-import numpy as np
-from mathx.linalg.vec.vec import Vec
-from typing import Sequence
+from physix.quantity.type.kinematic.pose.position.position import Position
 
 
-class Position(Quantity):
+class Cartesian(Position):
     def __init__(self, x: float, y: float, z: float):
         super().__init__([x, y, z])
         self._x = x
         self._y = y
         self._z = z
-
 
     @classmethod
     def init_from_components(cls, comps: Sequence[float]) -> "Position":
@@ -25,6 +21,3 @@ class Position(Quantity):
 
     def get_z(self) -> float:
         return self._z
-
-    def get_unit(self) -> Unit:
-        return self._unit

@@ -1,10 +1,10 @@
-from physix.quantity.quantity import Quantity
-from physix.quantity.quantity import Quantifiable
+from physix.quantity.scalar_quantifiable import ScalarQuantity
+from physix.quantity.scalar_quantifiable import TensorQuantifiable
 from physix.quantity.type.time import Time
 
 
 class Timed(Decorator):
-    def __init__(self, inner:Quantifiable, time:Time):
+    def __init__(self, inner:TensorQuantifiable, time:Time):
         super().__init__(inner)
         self._time = time
 

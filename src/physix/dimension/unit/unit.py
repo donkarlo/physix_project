@@ -4,8 +4,8 @@ from physix.dimension.dimension import Dimension
 
 
 class Unit:
-    def __init__(self, name:str):
-        self.__name = name
+    def __init__(self, id:str):
+        self.__id = id
 
-    def get_name(self) -> str:
-        return self.__name
+    def get_id(self) -> str:
+        return self.__id
