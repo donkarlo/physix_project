@@ -1,7 +1,6 @@
-from mathx.numbers.quaternion.quaternion import Quaternion
+from physix.quantity.type.kinematic.pose.orientation.quaternion import Quaternion
 from physix.quantity.type.kinematic.pose.pose import Pose
 from physix.quantity.type.kinematic.pose.position.position import Position
-from mathx.linalg.vec.opr.two_opranded import TwoOpranded
 from typing import Sequence
 
 

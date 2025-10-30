@@ -1,4 +1,3 @@
-from mathx.linalg.vec.vec import Vec
 from physix.dimension.unit.unit import Unit
 
 class Scalar:

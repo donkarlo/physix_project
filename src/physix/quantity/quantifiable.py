@@ -1,7 +1,7 @@
 from mathx.linalg.tensor.tensor_representable import TensorRepresentable
-from physix.quantity.quantifiable import Quantifiable
 from typing import Protocol, runtime_checkable
 
+
 @runtime_checkable
-class TensorQuantifiable(Quantifiable, TensorRepresentable, Protocol):
+class Quantifiable(Protocol):
     pass

@@ -1,7 +1,9 @@
 from mathx.linalg.tensor.tensor_representable import TensorRepresentable
-from mathx.linalg.vec.vec import Vec
-from physix.quantity.tensor_quantifiable import TensorQuantifiable
+from mathx.linalg.tensor.vector.vector import Vector
+from physix.quantity.quantifiable import Quantifiable
+from typing import runtime_checkable, Protocol
 
 
-class ScalarQuantity(TensorRepresentable):
+@runtime_checkable
+class ScalarQuantifiable(Quantifiable, Protocol):
     pass
