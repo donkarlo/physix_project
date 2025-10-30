@@ -1,6 +1,6 @@
 from functools import cache
-
-from mathx.linalg.tensor.vec.opr.two_opranded import TwoOpranded
+from mathx.linalg.tensor.vector.vector import Vector
+from mathx.linalg.tensor.vector.operation.two_opranded import TwoOpranded
 from physix.quantity.vector_quantifiable import VectorQuantifiable
 from physix.quantity.type.kinematic.pose.orientation.orientation import Orientation
 from physix.quantity.type.kinematic.pose.pose import Pose
@@ -19,7 +19,7 @@ class Kinematic(VectorQuantifiable):
         return self._orientation
 
     @cache
-    def get_vec_representation(self)->Vec:
+    def get_vec_representation(self)->Vector:
         pose_vec = self._pose.get_vector_representation()
         orientation_vec = self._orientation.get_vec_representation()
         return TwoOpranded(pose_vec, orientation_vec).concat()

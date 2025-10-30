@@ -1,8 +1,10 @@
 from physix.dimension.unit.unit import Unit
-from mathx.linalg.vec.vec import Vec
+from mathx.linalg.tensor.vector.vector import Vector
+from physix.quantity.vector_quantifiable import VectorQuantifiable
+from typing import override
 
 
-class Angular(Quantity):
+class Angular(VectorQuantifiable):
     """
     Linear velocity speed
     """
@@ -10,4 +12,8 @@ class Angular(Quantity):
         self._x = x
         self._y = y
         self._z = z
-        super().__init__(np.asarray([self._x, self._x, self._x]))
+        self._vector_representation = Vector([self._x, self._y, self._y])
+
+    @override
+    def get_vector_representation(self) -> "Vector":
+        return self._vector_representation

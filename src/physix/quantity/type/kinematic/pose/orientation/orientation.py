@@ -6,7 +6,7 @@ from typing import override, List
 class Orientation(VectorQuantifiable):
     def __init__(self, components:List[float]):
         self._components = components
-        self._vector_representation = Vector(Components)
+        self._vector_representation = Vector(self._components)
     @override
     def get_vector_representation(self)->Vector:
         return self._vector_representation

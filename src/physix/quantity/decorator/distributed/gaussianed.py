@@ -1,5 +1,7 @@
 from mathx.probability.covariance_matrix import CovarianceMatrix
 from mathx.probability.distribution.gaussian.distribution import Distribution
+from physix.quantity.decorator.decorator import Decorator
+from physix.quantity.quantifiable import Quantifiable
 
 
 class Gaussianed(Decorator):

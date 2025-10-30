@@ -1,6 +1,6 @@
-from physix.quantity.scalar_quantifiable import ScalarQuantity
+from physix.quantity.scalar_quantifiable import ScalarQuantifiable
 
 
-class Time(ScalarQuantity):
+class Time(ScalarQuantifiable):
     def __init__(self, t: float):
-        super().__init__([t])
+        self._time_value = t
