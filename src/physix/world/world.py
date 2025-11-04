@@ -10,6 +10,11 @@ class World:
     - en
     """
     def __init__(self, obstacles: Optional[List[Obstacle]]=None):
+        """
+
+        Args:
+            obstacles:
+        """
         self._obstacles = obstacles
 
     def build_from_sdf(self, sdf:str)->None:
