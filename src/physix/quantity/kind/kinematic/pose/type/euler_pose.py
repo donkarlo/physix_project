@@ -1,11 +1,12 @@
-from physix.quantity.type.kinematic.pose.orientation.quaternion import Quaternion
-from physix.quantity.type.kinematic.pose.pose import Pose
-from physix.quantity.type.kinematic.pose.position.position import Position
+from mathx.numbers.quaternion.quaternion import Quaternion
+from physix.quantity.kind.kinematic.pose.pose import Pose
+from physix.quantity.kind.kinematic.pose.position.position import Position
+from mathx.linalg.vec.opr.two_opranded import TwoOpranded
 from typing import Sequence
 
 
-class QuaternionPose(Pose):
-    def __init__(self, position:Position, quaternion:Quaternion):
+class EulerPose(Pose):
+    def __init__(self, position: Position, quaternion: Quaternion):
         self._position = position
         self._quaternion = quaternion
 

@@ -1,4 +1,4 @@
-from physix.quantity.type.kinematic.pose.position.position import Position
+from physix.quantity.kind.kinematic.pose.position.position import Position
 
 
 class Cartesian(Position):

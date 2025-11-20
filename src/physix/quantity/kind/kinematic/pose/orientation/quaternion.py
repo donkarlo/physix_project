@@ -1,4 +1,4 @@
-from physix.quantity.type.kinematic.pose.orientation.orientation import Orientation
+from physix.quantity.kind.kinematic.pose.orientation.orientation import Orientation
 
 
 class Quaternion(Orientation):

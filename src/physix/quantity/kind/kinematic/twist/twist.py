@@ -1,6 +1,6 @@
 from mathx.linalg.tensor.vector.operation.two_opranded import TwoOpranded
-from physix.quantity.type.kinematic.twist.angular import Angular
-from physix.quantity.type.kinematic.twist.linear import Linear
+from physix.quantity.kind.kinematic.twist.angular import Angular
+from physix.quantity.kind.kinematic.twist.linear import Linear
 from physix.quantity.vector_quantifiable import VectorQuantifiable
 from mathx.linalg.tensor.vector.vector import Vector
 

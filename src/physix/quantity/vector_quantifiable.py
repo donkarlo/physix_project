@@ -1,5 +1,4 @@
 from mathx.linalg.tensor.vector.vector_representable import VectorRepresentable
-from physix.quantity.tensor_quantifiable import TensorQuantifiable
 from physix.quantity.quantifiable import Quantifiable
 from typing import Protocol, runtime_checkable
 

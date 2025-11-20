@@ -1,6 +1,6 @@
 from mathx.geometry.euclidean.coordinate.three_dimension.spherical import Spherical as MathSpherical
-from physix.quantity.type.kinematic.pose.position.position import Position
-from physix.quantity.type.kinematic.pose.position.sperical.spherical import Spherical
+from physix.quantity.kind.kinematic.pose.position.position import Position
+from physix.quantity.kind.kinematic.pose.position.sperical.spherical import Spherical
 
 
 class Factory:

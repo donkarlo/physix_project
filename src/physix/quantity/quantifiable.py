@@ -1,4 +1,3 @@
-from mathx.linalg.tensor.tensor_representable import TensorRepresentable
 from typing import Protocol, runtime_checkable
 
 

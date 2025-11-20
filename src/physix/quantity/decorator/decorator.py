@@ -1,7 +1,6 @@
 from physix.quantity.quantifiable import Quantifiable
-from utilix.oop.design_pattern.structural.decorator.decorator import Decorator
+from utilix.oop.design_pattern.structural.decorator.decorator import Decorator as BaseDecorator
 
-
-class Decorator(Decorator, Quantifiable):
+class Decorator(BaseDecorator, Quantifiable):
     def __init__(self, inner: Quantifiable):
-        super(Decorator, self).__init__(inner)
+        BaseDecorator.__init__(self, inner)
