@@ -18,3 +18,8 @@ class Pose(VectorQuantifiable):
 
     def get_vector_representation(self):
         return self._vector_representation
+
+    def get_orientation(self):
+        return self._orientation
+    def get_position(self):
+        return self._position
