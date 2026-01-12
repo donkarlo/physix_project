@@ -1,8 +1,8 @@
 from mathx.numbers.quaternion.quaternion import Quaternion
 
-from physix.quantity.kind.kinematic.pose.orientation.euler import Euler
-from physix.quantity.kind.kinematic.pose.pose import Pose
-from physix.quantity.kind.kinematic.pose.position.position import Position
+from physix.quantity.kind.dynamic.kinematic.pose.orientation.euler import Euler
+from physix.quantity.kind.dynamic.kinematic.pose.pose import Pose
+from physix.quantity.kind.dynamic.kinematic.pose.position.position import Position
 from mathx.linalg.vec.opr.two_opranded import TwoOpranded
 from typing import Sequence
 

@@ -1,11 +1,14 @@
 from mathx.linalg.tensor.vector.operation.two_opranded import TwoOpranded
-from physix.quantity.kind.kinematic.twist.angular import Angular
-from physix.quantity.kind.kinematic.twist.linear import Linear
+from physix.quantity.kind.dynamic.kinematic.twist.angular import Angular
+from physix.quantity.kind.dynamic.kinematic.twist.linear import Linear
 from physix.quantity.vector_quantifiable import VectorQuantifiable
 from mathx.linalg.tensor.vector.vector import Vector
 
 
 class Twist(VectorQuantifiable):
+    """
+    Twist is teh first derivative
+    """
     def __init__(self, linear:Linear, angular:Angular):
         self._linear = linear
         self._angular = angular

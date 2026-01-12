@@ -1,6 +1,5 @@
-
-from physix.quantity.kind.kinematic.pose.orientation.orientation import Orientation
-from physix.quantity.kind.kinematic.pose.position.position import Position
+from physix.quantity.kind.dynamic.kinematic.pose.orientation.orientation import Orientation
+from physix.quantity.kind.dynamic.kinematic.pose.position.position import Position
 from physix.quantity.vector_quantifiable import VectorQuantifiable
 from mathx.linalg.tensor.vector.operation.two_opranded import TwoOpranded
 from mathx.linalg.tensor.vector.vector import Vector
