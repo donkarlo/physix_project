@@ -1,5 +1,5 @@
 class Kinematic(Vec):
     """
-    Doesnt have unit. maybe the pair_set is normalized so for example position is unitless
+    Doesnt have unit. maybe the group is normalized so for example position is unitless
     """
     pass
